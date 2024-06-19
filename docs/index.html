@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imarotus site</title>
+    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+    <style>
+        header {
+            background-color: rgb(246, 138, 174);
+            padding: 20px;
+            font-family: cursive;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: rgba(253, 220, 233, 0.856);
+        }
+        nav a {
+            color: rgb(202, 35, 91);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #eab1ccf3;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-image: url(pinkpic2.png);
+            background-size: cover;
+        }
+        .text {
+            background-color: rgba(242, 180, 201, 0.655);
+            margin: 1cm 10cm 1cm 10cm;
+            padding: 10px;
+        }
+        h3 {
+            color: rgb(202, 35, 91);
+        }
+        h2 {
+            font-family: cursive;
+            color: rgb(202, 35, 91);
+        }
+        input[type=text], textarea {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #fd599a;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #f31a91;
+        }
+        .column {
+            margin: 100px auto;
+            width: 50%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: rgb(246, 138, 174);
+            padding: 20px;
+            text-align: center;
+        }
+        @media screen and (max-width: 1000px) {
+            body {
+            padding: 2%;
+            display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Site !</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index2.html">Tables</a>
+        <a href="index3.html">Multimedia</a>
+        <a href="index4.html">Contact</a>
+    </nav>
+    <br>
+    <center>
+        <div class="row">
+        <img src="mypic.jpg" alt="my picture" width="300px" height="300px" style="border-radius: 50%;"/>
+        <br>
+        <div class="text">
+            <h3>I'm Imarotus Shafiratul Maghfiroh</h3>
+            <p>Seorang mahasiswi jurusan Sistem Informasi di ITPLN.
+                Saya orang yang fleksibel, mudah beradaptasi, dan senang mempelajari hal baru. 
+                Saya berkomitmen untuk berkembang sebagai seorang profesional IT yang memiliki 
+                pengetahuan luas dan memberikan kontribusi yang berarti bagi dunia digital.
+            </p>
+        </div>
+    </center>
+        <br>
+    <center>
+        <h2>Contact Me</h2>
+    </center>
+        <div class="column">
+            <form method="POST" action="kirim.php">
+                <label for="name">Name : </label><br>
+                <input type="text" id="name" name="name" placeholder="Your name.." required><br>
+                <label for="email">Email : </label><br>
+                <input type="text" id="email" name="email" placeholder="Your email.." required><br>
+                <label for="message">Message : </label><br>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea><br>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+        </div>
+    </form>
+    <footer>
+        <p> Copyright 2024 © Imarotussm</p>
+    </footer>
+</body>
+</html>
